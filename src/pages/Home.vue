@@ -1,3 +1,7 @@
+<script lang="ts" setup>
+import IconNames from '../components/Icons'
+</script>
+
 <template>
   <ion-page>
     <HelloWorld msg="Ionic Vue Vite Template" />
@@ -8,6 +12,7 @@
           <i-logos:vue class="hover:scale-120"></i-logos:vue>
           <i-logos:vitejs class="hover:scale-120"></i-logos:vitejs>
         </div>
+        <IconNames />
       </ion-label>
     </ion-content>
   </ion-page>
