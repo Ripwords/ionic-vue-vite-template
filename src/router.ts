@@ -1,9 +1,13 @@
-import { createWebHashHistory, createRouter } from '@ionic/vue-router'
+import { createWebHistory, createRouter } from '@ionic/vue-router'
 import { RouteRecordRaw } from 'vue-router'
 
 const routes: Array<RouteRecordRaw> = [
   {
     path: '/',
+    redirect: '/home'
+  },
+  {
+    path: '/:pathMatch(.*)',
     redirect: '/home'
   },
   {
@@ -13,7 +17,7 @@ const routes: Array<RouteRecordRaw> = [
 ]
 
 const router = createRouter({
-  history: createWebHashHistory(import.meta.env.BASE_URL),
+  history: createWebHistory(import.meta.env.BASE_URL),
   routes
 })
 
