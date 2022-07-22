@@ -35,7 +35,38 @@ export default defineConfig({
     VitePWA({
       base: '/',
       srcDir: 'src',
-      manifest: {}
+      manifest: {
+        name: "Vite App",
+        short_name: "vite app",
+        theme_color: "#1e1e1e",
+        start_url: "/",
+        icons: [
+          {
+            "src": "img/icons/manifest-icon-192.maskable.png",
+            "sizes": "192x192",
+            "type": "image/png",
+            "purpose": "any"
+          },
+          {
+            "src": "img/icons/manifest-icon-192.maskable.png",
+            "sizes": "192x192",
+            "type": "image/png",
+            "purpose": "maskable"
+          },
+          {
+            "src": "img/icons/manifest-icon-512.maskable.png",
+            "sizes": "512x512",
+            "type": "image/png",
+            "purpose": "any"
+          },
+          {
+            "src": "img/icons/manifest-icon-512.maskable.png",
+            "sizes": "512x512",
+            "type": "image/png",
+            "purpose": "maskable"
+          }
+        ]
+      }
     })
   ]
 })

@@ -3,7 +3,8 @@
   "version": "0.1.0",
   "scripts": {
     "dev": "vite --open",
-    "build": "vue-tsc --noEmit && vite build"
+    "build": "vue-tsc --noEmit && vite build",
+    "assets": "cd public && pwa-asset-generator Logo.png ./img/icons && cd .."
   },
   "dependencies": {
     "@ionic/vue": "^6.0.8",
@@ -16,6 +17,7 @@
   "devDependencies": {
     "@iconify/json": "^2.1.4",
     "@vitejs/plugin-vue": "^2.2.2",
+    "pwa-asset-generator": "^6.1.1",
     "typescript": "^4.5.5",
     "unplugin-auto-import": "^0.6.1",
     "unplugin-icons": "^0.13.2",
@@ -24,6 +26,7 @@
     "vite-plugin-pwa": "^0.11.13",
     "vite-plugin-windicss": "^1.7.1",
     "vue-tsc": "^0.3.0",
-    "windicss": "^3.4.4"
+    "windicss": "^3.4.4",
+    "workbox-window": "^6.5.3"
   }
 }
